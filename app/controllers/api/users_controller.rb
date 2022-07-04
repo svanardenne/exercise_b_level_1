@@ -1,4 +1,8 @@
 class Api::UsersController < ApplicationController
+  def show; end
+
+  def show_id; end
+
   def create
     @user = User.new(username: 'Shaun',
                      email: 's.vanardenne@gmail.com',
