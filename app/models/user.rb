@@ -3,7 +3,7 @@ class User < ApplicationRecord
   validates :email, presence: true
   validates :bio, presence: true
   validates_uniqueness_of :id
-  validates_uniqueness_of :username
-  validates :email,
-            format: { uniqueness: { case_sensitive: false } }
+  validates :username, uniqueness: { message: 'username must be unique' }
+  validates :email, uniqueness: { case_sensitive: false,
+                                  message: 'email must be unique' }
 end
