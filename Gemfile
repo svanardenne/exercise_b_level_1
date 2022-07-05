@@ -19,6 +19,9 @@ gem 'puma', '~> 5.0'
 # Use Faker for random user generation
 gem 'faker'
 
+# use postgresql
+gem 'pg'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

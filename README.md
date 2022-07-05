@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## To Install and Run
 
-Things you may want to cover:
+Make sure to have docker and docker compose installed
 
-* Ruby version
+In the root directory of the project:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. run `docker-compose build`
+2. run `docker-compose up`
+3.
