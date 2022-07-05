@@ -1,9 +1,14 @@
 class UsersController < ApplicationController
   # Returns user details
-  def show; end
+  def show
+    @user = User.find_by(id: params[:id])
+    render json: @user
+  end
 
   # Returns universally unique identifier
-  def show_id; end
+  def show_id
+    render json: SecureRandom.uuid
+  end
 
   # Creates user
   def create
