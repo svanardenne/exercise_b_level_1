@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  # import Faker for random user generation
-  require 'faker'
   # Returns user details
   def show; end
 
@@ -9,8 +7,8 @@ class UsersController < ApplicationController
 
   # Creates user
   def create
-    @user = User.new(username: Faker::Internet.username,
-                     email: Faker::Internet.email,
+    @user = User.new(username: Faker::Internet.unique.username,
+                     email: Faker::Internet.unique.email,
                      bio: Faker::Lorem.paragraph)
     if @user.save
       render json: @user
