@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     render json: { id: SecureRandom.uuid }
   end
 
-  # Creates user
+  # Creates user and returns user json data
   def create
     @user = User.new(username: Faker::Internet.unique.username,
                      email: Faker::Internet.unique.email,
