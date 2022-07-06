@@ -7,7 +7,7 @@ class UsersController < ApplicationController
 
   # Returns universally unique identifier
   def show_id
-    render json: SecureRandom.uuid
+    render json: { id: SecureRandom.uuid }
   end
 
   # Creates user

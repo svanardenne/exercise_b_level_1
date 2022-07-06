@@ -22,6 +22,9 @@ gem 'faker'
 # use postgresql
 gem 'pg'
 
+# uses cors gem to deal with localhost cors issues
+gem 'rack-cors'
+
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
