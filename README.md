@@ -15,3 +15,9 @@ In the root directory of the project:
 
 4. run `docker-compose up`
 5. API can be accessed from http://localhost:3000
+
+### Endpoints
+
+- id (GET) - Gets a UUID
+- user (GET) - retrieves the information of a specific user
+- user (post) - Creates a user and returns the created user information
