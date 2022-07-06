@@ -14,4 +14,4 @@ In the root directory of the project:
 - `docker-compose run web rails db:seed`
 
 4. run `docker-compose up`
-5. API can be accessed from localhost:3000
+5. API can be accessed from http://localhost:3000
